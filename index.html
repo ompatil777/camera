@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <div class="d-flex justify-content-center align-items-end pb-5 gap-3 vh-100">
+
+        <button id="start" type="button" class="btn btn-lg btn-dark">Start Camera</button>
+
+        <button id="capture" type="button" class="d-none btn btn-lg btn-primary">
+            Capture
+            <i class="bi bi-camera"></i>
+        </button>
+        <button id="restart" type="button" class="btn btn-warning d-none">Restart <i class="bi bi-camera2"></i></button>
+
+        <button id="close" type="button" class="d-none btn btn-lg btn-danger">
+            Close
+            <i class="bi bi-telephone-x"></i>
+        </button>
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="d-flex align-items-center  gap-2" id="loader"></div>
+        <video height="200" autoplay controls id="player" class="d-none"></video>
+        <canvas class="d-none " id="canvas" height="200px" width="300px"></canvas>
+    </div>
+
+    <div class="position-absoulute" style="top:50px;right:50px">
+        <button id="switchCamera" type="button" class="btn btn-outline-primary btn-lg ">
+            <i class="bi bi-camera2"></i>
+        </button>
+    </div>
+
+<script src="/ASSET/JS/app.js" type="module"></script>
+  </body>
+
+</html>
